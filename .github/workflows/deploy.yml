@@ -10,10 +10,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Get latest code
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - name: Use Node.js
-      uses: actions/setup-node@v3
+      uses: actions/setup-node@v4
       with:
         node-version: '18'
 
@@ -23,7 +23,7 @@ jobs:
         npm run build
 
     - name: Sync files to FTP
-      uses: SamKirkland/FTP-Deploy-Action@4.3.3
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
         server: 1319070690.cloudylink.com
         username: h435958@hamtaglobal.com
