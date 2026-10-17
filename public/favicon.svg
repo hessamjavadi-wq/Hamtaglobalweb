@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <!-- Subtle drop shadow and metallic gradients -->
+    <filter id="icon-shadow" x="-10%" y="-10%" width="125%" height="125%">
+      <feDropShadow dx="0" dy="1.5" stdDeviation="1.5" flood-color="#000000" flood-opacity="0.35" />
+    </filter>
+    <linearGradient id="navy-metal" x1="20%" y1="10%" x2="80%" y2="90%">
+      <stop offset="0%" stop-color="#1B385D" />
+      <stop offset="60%" stop-color="#0E233E" />
+      <stop offset="100%" stop-color="#071526" />
+    </linearGradient>
+    <linearGradient id="gold-metal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#DEBE82" />
+      <stop offset="50%" stop-color="#C19A5B" />
+      <stop offset="100%" stop-color="#9C7738" />
+    </linearGradient>
+  </defs>
+
+  <!-- Clean rounded icon container for premium tab contrast (works on light & dark tabs) -->
+  <rect width="100" height="100" rx="22" fill="#0B1322" stroke="#1E2E46" stroke-width="1.5" />
+
+  <!-- Monogram Mark Group -->
+  <g filter="url(#icon-shadow)">
+    <!-- 1. Left Navy Stem (H-Pillar) -->
+    <path
+      d="M37 28 L40.5 35.5 L34 50 L39.5 50 C 35 59, 29 67, 26 73 L20 73 C 24 64, 31 48, 37 28 Z"
+      fill="url(#navy-metal)"
+      stroke="#385F8D"
+      stroke-width="0.5"
+    />
+
+    <!-- 2. Lower Navy 'G' Chevron Foundation -->
+    <path
+      d="M36 53 L58 78 L78 54 H67 L58 65 L44 53 Z"
+      fill="url(#navy-metal)"
+      stroke="#385F8D"
+      stroke-width="0.5"
+    />
+    <!-- G Top Horizontal Shelf -->
+    <path
+      d="M58 49 H78 V54 H58 Z"
+      fill="url(#navy-metal)"
+      stroke="#385F8D"
+      stroke-width="0.5"
+    />
+
+    <!-- 3. Upper Gold Wing/Feather Accent -->
+    <path
+      d="M44 48 C 45 42, 51 34, 64 28 C 62 33, 56 40, 44 48 Z"
+      fill="url(#gold-metal)"
+      stroke="#E5CF9E"
+      stroke-width="0.4"
+    />
+
+    <!-- 4. Lower-Right Gold Rhombus Accent -->
+    <polygon
+      points="73,42 79,37 76,33 70,38"
+      fill="url(#gold-metal)"
+      stroke="#E5CF9E"
+      stroke-width="0.4"
+    />
+
+    <!-- 5. Ascending Navy Arrow with Sweeping Arch & Arrowhead -->
+    <!-- Curved Tail -->
+    <path
+      d="M33 53 C 44 53, 57 45, 68 34 L73 39 C 60 51, 44 60, 33 53 Z"
+      fill="url(#navy-metal)"
+      stroke="#385F8D"
+      stroke-width="0.5"
+    />
+    <!-- Large Precision Arrowhead -->
+    <polygon
+      points="79,16 83,37 74,32 64,36"
+      fill="url(#navy-metal)"
+      stroke="#385F8D"
+      stroke-width="0.6"
+    />
+  </g>
+</svg>
